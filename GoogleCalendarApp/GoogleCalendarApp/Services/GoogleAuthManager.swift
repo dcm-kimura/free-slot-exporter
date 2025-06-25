@@ -27,13 +27,17 @@ class GoogleAuthManager: ObservableObject {
         
         self.clientID = id
         self.clientSecret = secret
-        self.redirectURI = "com.googleusercontent.apps.\(id.components(separatedBy: "-").first ?? ""):/oauthredirect"
+        // Client IDの".apps.googleusercontent.com"を除いた部分を使用
+        let clientIDWithoutDomain = id.replacingOccurrences(of: ".apps.googleusercontent.com", with: "")
+        self.redirectURI = "com.googleusercontent.apps.\(clientIDWithoutDomain):/oauthredirect"
         
         // デバッグ情報を出力
         print("🔧 OAuth Configuration:")
         print("   Client ID: \(self.clientID)")
         print("   Redirect URI: \(self.redirectURI)")
         print("   Client Secret: \(secret.prefix(10))...")  // セキュリティのため一部のみ表示
+        print("   URI Length: \(self.redirectURI.count) characters")
+        print("   URI Components: \(self.redirectURI.components(separatedBy: ":"))")
         
         loadAuthState()
     }

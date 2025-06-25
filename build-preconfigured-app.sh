@@ -14,7 +14,7 @@ if [ ! -f "GoogleCalendarApp/GoogleCalendarApp/Config.plist" ]; then
 fi
 
 # バージョン情報
-VERSION="1.0.3"
+VERSION="1.0.4"
 APP_NAME="FreeSlotExporter"
 BUILD_DIR=".build/release"
 APP_BUNDLE="${BUILD_DIR}/${APP_NAME}.app"
