@@ -20,11 +20,6 @@ Google Calendarと連携して空き時間を抽出・エクスポートするma
 
 ---
 
-### 🔧 開発者向け: セルフ設定版 (v1.0.0)
-
-**自分でGoogle認証情報を設定したい場合:**
-- [📦 FreeSlotExporter-1.0.0.dmg](https://github.com/dcm-kimura/free-slot-exporter/releases/download/v1.0.0/FreeSlotExporter-1.0.0.dmg) - セルフ設定版
-
 ## 機能
 
 - **Googleアカウント認証**: OAuth 2.0による安全な認証
@@ -41,53 +36,6 @@ Google Calendarと連携して空き時間を抽出・エクスポートするma
 - Swift 5.9以降
 - Google Calendarアカウント
 
-## セットアップ
-
-### 1. Google Cloud Consoleでの設定
-
-1. [Google Cloud Console](https://console.cloud.google.com/)にアクセス
-2. 新しいプロジェクトを作成（または既存のプロジェクトを選択）
-3. Calendar APIを有効化
-4. OAuth 2.0認証情報を作成
-   - アプリケーションタイプ: デスクトップ
-   - リダイレクトURI: `com.googleusercontent.apps.YOUR_CLIENT_ID:/oauthredirect`
-
-### 2. アプリケーションの設定
-
-1. `Config.plist.template`をコピーして`Config.plist`を作成:
-
-```bash
-cd GoogleCalendarApp
-cp Config.plist.template GoogleCalendarApp/Config.plist
-```
-
-2. `Config.plist`を編集して認証情報を設定:
-
-```xml
-<key>ClientID</key>
-<string>YOUR_CLIENT_ID_HERE</string>
-<key>ClientSecret</key>
-<string>YOUR_CLIENT_SECRET_HERE</string>
-```
-
-3. `Info.plist`のURL Schemeも同様に更新:
-   - `CFBundleURLSchemes`の値を`com.googleusercontent.apps.YOUR_CLIENT_ID`に変更
-
-**重要**: `Config.plist`は`.gitignore`に含まれているため、Gitにコミットされません。各開発者が個別に作成する必要があります。
-
-### 3. ビルドと実行
-
-```bash
-cd GoogleCalendarApp
-swift build
-swift run
-```
-
-または、Xcodeで開発する場合:
-
-```bash
-open Package.swift
-```
 
 ## 使い方
 
@@ -115,7 +63,6 @@ open Package.swift
 - 認証情報はmacOSのKeychainに安全に保存されます
 - Google Calendarへは読み取り専用でアクセスします
 - 個人情報はローカルにのみ保存され、外部に送信されることはありません
-- client_secret.jsonファイルは.gitignoreに含まれており、リポジトリには含まれません
 
 ## ライセンス
 
