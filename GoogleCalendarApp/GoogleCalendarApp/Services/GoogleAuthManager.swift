@@ -29,6 +29,12 @@ class GoogleAuthManager: ObservableObject {
         self.clientSecret = secret
         self.redirectURI = "com.googleusercontent.apps.\(id.components(separatedBy: "-").first ?? ""):/oauthredirect"
         
+        // デバッグ情報を出力
+        print("🔧 OAuth Configuration:")
+        print("   Client ID: \(self.clientID)")
+        print("   Redirect URI: \(self.redirectURI)")
+        print("   Client Secret: \(secret.prefix(10))...")  // セキュリティのため一部のみ表示
+        
         loadAuthState()
     }
     
@@ -65,12 +71,38 @@ class GoogleAuthManager: ObservableObject {
                 externalUserAgent: externalUserAgent,
                 callback: { authState, error in
                     if let authState = authState {
+                        print("✅ OAuth認証成功")
                         self.authState = authState
                         self.saveAuthState()
                         self.isAuthenticated = true
                         self.fetchUserEmail()
                     } else {
-                        print("Authorization error: \(error?.localizedDescription ?? "Unknown error")")
+                        print("❌ OAuth認証エラー:")
+                        print("   エラー: \(error?.localizedDescription ?? "Unknown error")")
+                        if let error = error as NSError? {
+                            print("   ドメイン: \(error.domain)")
+                            print("   コード: \(error.code)")
+                            print("   詳細: \(error.userInfo)")
+                        }
+                        
+                        DispatchQueue.main.async {
+                            // エラーを視覚的に表示
+                            let alert = NSAlert()
+                            alert.messageText = "Google認証エラー"
+                            alert.informativeText = """
+                            認証に失敗しました。
+                            
+                            考えられる原因:
+                            • Google Cloud ConsoleでリダイレクトURIが正しく設定されていない
+                            • OAuth同意画面の設定が不完全
+                            • Calendar APIが有効になっていない
+                            
+                            エラー詳細: \(error?.localizedDescription ?? "不明")
+                            """
+                            alert.alertStyle = .warning
+                            alert.addButton(withTitle: "OK")
+                            alert.runModal()
+                        }
                     }
                 }
             )

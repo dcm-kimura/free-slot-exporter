@@ -16,7 +16,15 @@
       "Bash(mv:*)",
       "Bash(git commit:*)",
       "Bash(git remote add:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(chmod:*)",
+      "Bash(./setup-free-distribution.sh:*)",
+      "Bash(cp:*)",
+      "Bash(gh release create:*)",
+      "Bash(./build-preconfigured-app.sh:*)",
+      "Bash(./create-preconfigured-dmg.sh:*)",
+      "Bash(sips:*)",
+      "Bash(iconutil:*)"
     ],
     "deny": []
   }

@@ -6,7 +6,7 @@
 set -e
 
 APP_NAME="FreeSlotExporter"
-VERSION="1.0.2"
+VERSION="1.0.3"
 BUILD_DIR=".build/release"
 APP_BUNDLE="${BUILD_DIR}/${APP_NAME}.app"
 DMG_NAME="${APP_NAME}-Ready-${VERSION}"
