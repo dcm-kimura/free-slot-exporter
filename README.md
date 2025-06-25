@@ -6,11 +6,11 @@ Google Calendarと連携して空き時間を抽出・エクスポートするma
 
 ## 📥 ダウンロード
 
-### 🚀 推奨: Ready to Use Edition (v1.0.1) 
+### 🚀 推奨: Ready to Use Edition (v1.0.2) 
 
-**設定不要で即座に使える！**
-- [📦 FreeSlotExporter-Ready-1.0.1.dmg](https://github.com/dcm-kimura/free-slot-exporter/releases/download/v1.0.1-ready/FreeSlotExporter-Ready-1.0.1.dmg) - 事前設定済みアプリ
-- [📖 READY-INSTALL.md](https://github.com/dcm-kimura/free-slot-exporter/releases/download/v1.0.1-ready/READY-INSTALL.md) - 3ステップインストール手順
+**設定不要で即座に使える！カスタムアイコン付き！**
+- [📦 FreeSlotExporter-Ready-1.0.2.dmg](https://github.com/dcm-kimura/free-slot-exporter/releases/download/v1.0.2-ready/FreeSlotExporter-Ready-1.0.2.dmg) - 事前設定済みアプリ
+- [📖 README.txt](https://github.com/dcm-kimura/free-slot-exporter/releases/download/v1.0.2-ready/README.txt) - 3ステップインストール手順
 
 ### 🎯 超簡単インストール（3ステップ）
 1. **DMGをダウンロード**して開く

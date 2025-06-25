@@ -14,7 +14,7 @@ if [ ! -f "GoogleCalendarApp/GoogleCalendarApp/Config.plist" ]; then
 fi
 
 # バージョン情報
-VERSION="1.0.1"
+VERSION="1.0.2"
 APP_NAME="FreeSlotExporter"
 BUILD_DIR=".build/release"
 APP_BUNDLE="${BUILD_DIR}/${APP_NAME}.app"
@@ -43,6 +43,10 @@ cp "GoogleCalendarApp/.build/release/${APP_NAME}" "${MACOS_DIR}/"
 # 事前設定済みConfig.plistをコピー
 echo "🔐 Adding pre-configured credentials..."
 cp "GoogleCalendarApp/GoogleCalendarApp/Config.plist" "${RESOURCES_DIR}/"
+
+# アイコンを追加
+echo "🎨 Adding app icon..."
+cp "AppIcon.icns" "${RESOURCES_DIR}/"
 
 # Info.plistを作成（あなたの認証情報を使用）
 echo "📄 Creating Info.plist..."
@@ -91,6 +95,8 @@ cat > "${CONTENTS_DIR}/Info.plist" << EOF
         <key>NSAllowsArbitraryLoads</key>
         <true/>
     </dict>
+    <key>CFBundleIconFile</key>
+    <string>AppIcon</string>
 </dict>
 </plist>
 EOF

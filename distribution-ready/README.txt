@@ -1,10 +1,11 @@
-FreeSlotExporter v1.0.1 - Ready to Use!
+FreeSlotExporter v1.0.2 - Ready to Use with Custom Icon! 🎨
 
 🎉 Google認証情報は既に設定済みです！
+✨ 美しいカスタムアイコン付き！
 
 インストール方法:
 1. FreeSlotExporter.app を Applications フォルダにドラッグ&ドロップ
-2. アプリを起動
+2. アプリを起動（Dock・Launchpadで素敵なアイコンを確認！）
 3. Googleアカウントでログイン
 4. すぐに使用開始！
 
