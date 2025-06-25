@@ -1,6 +1,6 @@
 # FreeSlotExporter
 
-![screen](https://github.com/user-attachments/assets/e26357dd-271d-44a7-a37b-6566edb31863)
+![screen2](https://github.com/user-attachments/assets/a6ec61ca-a7a3-4162-b2ad-31e3d14579df)
 
 > **2025 Vibe Coding Day** で開発されたプロジェクトです 🚀
 
@@ -10,8 +10,7 @@ Google Calendarと連携して空き時間を抽出・エクスポートするma
 
 ### 🚀 推奨: Ready to Use Edition (v1.0.4) 
 
-**設定不要で即座に使える！OAuth認証エラー修正済み！**
-- [📦 FreeSlotExporter-Ready-1.0.4.dmg](https://github.com/dcm-kimura/free-slot-exporter/releases/download/v1.0.4-ready/FreeSlotExporter-Ready-1.0.4.dmg) - 事前設定済みアプリ
+- [📦 FreeSlotExporter-Ready-1.0.4.dmg](https://github.com/dcm-kimura/free-slot-exporter/releases/download/v1.0.4-ready/FreeSlotExporter-Ready-1.0.4.dmg)
 
 ### 🎯 超簡単インストール（3ステップ）
 1. **DMGをダウンロード**して開く
