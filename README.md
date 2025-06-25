@@ -4,6 +4,24 @@
 
 Google Calendarと連携して空き時間を抽出・エクスポートするmacOSアプリケーションです。
 
+## 📥 ダウンロード
+
+### 最新版: v1.0.0 🎉
+
+**即座に使える配布版:**
+- [📦 FreeSlotExporter-1.0.0.dmg](https://github.com/dcm-kimura/free-slot-exporter/releases/latest/download/FreeSlotExporter-1.0.0.dmg) - アプリ本体
+- [⚙️ easy-setup.sh](https://github.com/dcm-kimura/free-slot-exporter/releases/latest/download/easy-setup.sh) - 簡単セットアップスクリプト
+- [📖 INSTALL.md](https://github.com/dcm-kimura/free-slot-exporter/releases/latest/download/INSTALL.md) - 詳細インストール手順
+
+### 📱 簡単インストール手順
+1. **DMGをダウンロード**して開く
+2. **アプリをApplicationsフォルダ**にドラッグ&ドロップ
+3. **Google認証情報を取得**（[Google Cloud Console](https://console.cloud.google.com/)）
+4. **簡単セットアップを実行**: `./easy-setup.sh`
+5. **アプリを起動**！
+
+> **無料配布中** - Apple Developer Accountは不要です！
+
 ## 機能
 
 - **Googleアカウント認証**: OAuth 2.0による安全な認証
