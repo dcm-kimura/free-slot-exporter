@@ -1,5 +1,7 @@
 # FreeSlotExporter
 
+> **2025 Vibe Coding Day** で開発されたプロジェクトです 🚀
+
 Google Calendarと連携して空き時間を抽出・エクスポートするmacOSアプリケーションです。
 
 ## 機能
