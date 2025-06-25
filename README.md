@@ -6,21 +6,25 @@ Google Calendarと連携して空き時間を抽出・エクスポートするma
 
 ## 📥 ダウンロード
 
-### 最新版: v1.0.0 🎉
+### 🚀 推奨: Ready to Use Edition (v1.0.1) 
 
-**即座に使える配布版:**
-- [📦 FreeSlotExporter-1.0.0.dmg](https://github.com/dcm-kimura/free-slot-exporter/releases/latest/download/FreeSlotExporter-1.0.0.dmg) - アプリ本体
-- [⚙️ easy-setup.sh](https://github.com/dcm-kimura/free-slot-exporter/releases/latest/download/easy-setup.sh) - 簡単セットアップスクリプト
-- [📖 INSTALL.md](https://github.com/dcm-kimura/free-slot-exporter/releases/latest/download/INSTALL.md) - 詳細インストール手順
+**設定不要で即座に使える！**
+- [📦 FreeSlotExporter-Ready-1.0.1.dmg](https://github.com/dcm-kimura/free-slot-exporter/releases/download/v1.0.1-ready/FreeSlotExporter-Ready-1.0.1.dmg) - 事前設定済みアプリ
+- [📖 READY-INSTALL.md](https://github.com/dcm-kimura/free-slot-exporter/releases/download/v1.0.1-ready/READY-INSTALL.md) - 3ステップインストール手順
 
-### 📱 簡単インストール手順
+### 🎯 超簡単インストール（3ステップ）
 1. **DMGをダウンロード**して開く
 2. **アプリをApplicationsフォルダ**にドラッグ&ドロップ
-3. **Google認証情報を取得**（[Google Cloud Console](https://console.cloud.google.com/)）
-4. **簡単セットアップを実行**: `./easy-setup.sh`
-5. **アプリを起動**！
+3. **アプリを起動**してGoogleでログイン → **完了！**
 
-> **無料配布中** - Apple Developer Accountは不要です！
+> **Google Cloud設定は不要** - 全て事前設定済みです！
+
+---
+
+### 🔧 開発者向け: セルフ設定版 (v1.0.0)
+
+**自分でGoogle認証情報を設定したい場合:**
+- [📦 FreeSlotExporter-1.0.0.dmg](https://github.com/dcm-kimura/free-slot-exporter/releases/download/v1.0.0/FreeSlotExporter-1.0.0.dmg) - セルフ設定版
 
 ## 機能
 
