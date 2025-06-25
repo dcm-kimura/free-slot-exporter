@@ -1,0 +1,25 @@
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Xcode
+xcuserdata/
+*.xcworkspace/
+DerivedData/
+.DS_Store
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Secrets and Configuration
+client_secret_*.json
+*.p12
+*.pem
+Config.plist
+GoogleCalendarApp/Config.plist
+GoogleCalendarApp/GoogleCalendarApp/Config.plist
+
+# User-specific settings
+.claude/settings.local.json
